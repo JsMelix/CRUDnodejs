@@ -1,50 +1,9 @@
 {
-    "libros": [
-      {
-        "id": 1,
-        "address": "cien años de soledad",
-        "type": "frutería",
-        "nombre": "Lola Castro Frutas",
-        "latitude": 37.880273,
-        "longitude": -4.792098
-      },
-      {
-        "id": 2,
-        "address": "el perfume",
-        "type": "supermercado",
-        "nombre": "Ultramarinos Lolo Castro",
-        "latitude": 37.862323,
-        "longitude": -4.77812
-      },
-      {
-        "id": 3,
-        "address": "ama y no sufras",
-        "type": "pescadería",
-        "nombre": "Pescados El Boquerón",
-        "latitude": 37.856273,
-        "longitude": -4.776992
-      }
-    ],
-    "products": [
-      {
-        "id": 1,
-        "name": "manzanas",
-        "shopId": 1
-      },
-      {
-        "id": 2,
-        "name": "peras",
-        "shopId": 1
-      },
-      {
-        "id": 3,
-        "name": "escoba",
-        "shopId": 2
-      },
-      {
-        "id": 4,
-        "name": "detergente",
-        "shopId": 2
-      }
-    ]
-  }
+  "libros": [
+    { "id": 1, "title": "cien años de soledad", "genero": "novela" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
