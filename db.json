@@ -184,6 +184,45 @@
       "nombre": "cien años ",
       "libro": "sdsd",
       "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "nombre": "el principito",
+      "libro": "fanatasia",
+      "id": 41
+    },
+    {
+      "nombre": "edipo",
+      "libro": "cuento",
+      "id": 42
+    },
+    {
+      "nombre": "el perfume",
+      "libro": "novela",
+      "id": 43
+    },
+    {
+      "nombre": "america",
+      "libro": "novela",
+      "id": 44
+    },
+    {
+      "nombre": "harry potter",
+      "libro": "ficcion",
+      "id": 45
+    },
+    {
+      "nombre": "crepusculo",
+      "libro": "novela",
+      "id": 46
     }
   ],
   "comments": [
