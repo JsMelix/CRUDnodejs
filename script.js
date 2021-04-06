@@ -7,7 +7,7 @@ const d = document,
 
     const getAll = async () => {
       try {
-        let res = await fetch("http://localhost:3001/libros"),
+        let res = await fetch("https://crudenode-app.herokuapp.com/libros/api"),
           json = await res.json();
 
         if (!res.ok) throw { status: res.status, statusText: res.statusText };
