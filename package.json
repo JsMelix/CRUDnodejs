@@ -12,6 +12,7 @@
   "author": "juan sebastian",
   "license": "MIT",
   "dependencies": {
+    "heroku": "^7.51.0",
     "json-server": "^0.16.3"
   }
 }
