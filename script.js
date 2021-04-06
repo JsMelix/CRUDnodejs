@@ -7,7 +7,7 @@ const d = document,
 
     const getAll = async () => {
       try {
-        let res = await fetch("https://crudenode-app.herokuapp.com/api"),
+        let res = await fetch("https://crudenode-app.herokuapp.com/libros"),
           json = await res.json();
 
         if (!res.ok) throw { status: res.status, statusText: res.statusText };
@@ -51,7 +51,7 @@ const d = document,
                 libro: e.target.libro.value
               })
             },
-              res = await fetch("http://localhost:3001/libros", options),
+              res = await fetch("https://crudenode-app.herokuapp.com/libros", options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
@@ -74,7 +74,7 @@ const d = document,
                 libro: e.target.libro.value
               })
             },
-              res = await fetch(`https://crudenode-app.herokuapp.com/api${e.target.id.value}`, options),
+              res = await fetch(`https://crudenode-app.herokuapp.com/libros${e.target.id.value}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
@@ -108,7 +108,7 @@ const d = document,
                 "Content-type": "application/json; charset=utf-8"
               }
             },
-              res = await fetch(`https://crudenode-app.herokuapp.com/libros/api${e.target.dataset.id}`, options),
+              res = await fetch(`https://crudenode-app.herokuapp.com/librosi${e.target.dataset.id}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
