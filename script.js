@@ -108,7 +108,7 @@ const d = document,
                 "Content-type": "application/json; charset=utf-8"
               }
             },
-            res = await fetch(`https://crudenode-app.herokuapp.com/libros/1${e.target.id.value}`, options),
+            res = await fetch(`https://crudenode-app.herokuapp.com/libros/1${librosId}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
