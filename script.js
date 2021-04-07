@@ -108,7 +108,7 @@
                 "Content-type": "application/json; charset=utf-8"
               }
             },
-            res = await fetch(`https://crudenode-app.herokuapp.com/libros/1/${e.target.dataset.id}`, options),
+            res = await fetch(`https://crudenode-app.herokuapp.com/libros/api/${e.target.dataset.id}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
