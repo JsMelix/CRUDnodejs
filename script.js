@@ -18,8 +18,8 @@ const d = document,
           $template.querySelector(".libro").textContent = el.libro;
           $template.querySelector(".edit").dataset.id = el.id;
           $template.querySelector(".edit").dataset.name = el.nombre;
-          $template.querySelector(".edit").dataset.libro = el.libro;
-          $template.querySelector(".delete").dataset.id = el.id;
+          $template.querySelector(".edit").dataset.libro = el.id;
+          $template.querySelector(".delete").dataset.id = el.libro;
 
           let $clone = d.importNode($template, true);
           $fragment.appendChild($clone);
