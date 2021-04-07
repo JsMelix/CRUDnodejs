@@ -74,7 +74,7 @@
                 libro: e.target.libro.value
               })
             },
-              res = await fetch(`https://crudenode-app.herokuapp.com/libros${e.target.id.value}`, options),
+              res = await fetch(`https://crudenode-app.herokuapp.com/libros/${e.target.id.value}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
