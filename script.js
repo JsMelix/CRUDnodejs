@@ -19,7 +19,7 @@ const d = document,
           $template.querySelector(".edit").dataset.id = el.id;
           $template.querySelector(".edit").dataset.name = el.nombre;
           $template.querySelector(".edit").dataset.libro = el.id;
-          $template.querySelector(".delete").dataset.id = el.libro;
+          $template.querySelector(".delete").dataset.id = el.id;
 
           let $clone = d.importNode($template, true);
           $fragment.appendChild($clone);
@@ -108,7 +108,7 @@ const d = document,
                 "Content-type": "application/json; charset=utf-8"
               }
             },
-            res = await fetch(`https://crudenode-app.herokuapp.com/libros/1/${e.target.id.value}`, options),
+            res = await fetch(`https://crudenode-app.herokuapp.com/libros/1/${e.target.dataset.id}`, options),
               json = await res.json();
 
             if (!res.ok) throw { status: res.status, statusText: res.statusText };
