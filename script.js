@@ -1,4 +1,4 @@
-const d = document,
+    const d = document,
       $table = d.querySelector(".crud-tabla"),
       $form = d.querySelector(".crud-form"),
       $title = d.querySelector(".crud-title"),
